@@ -1,14 +1,12 @@
 package TascaS1_01.Exercici_02;
 
-import utils
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-        Phone phone = new Phone("Iphone", "12");
-        phone.call("111");
+        Scanner scanner = new Scanner(System.in);
         Smartphone smartphone = new Smartphone("Oppo", "5");
-        smartphone.call("1234");
+        smartphone.call("123456789");
         smartphone.alarm();
         smartphone.photograph();
     }
