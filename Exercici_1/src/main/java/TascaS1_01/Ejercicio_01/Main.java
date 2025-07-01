@@ -1,6 +1,5 @@
 package TascaS1_01.Ejercicio_01;
 
-import java.util.Objects;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
