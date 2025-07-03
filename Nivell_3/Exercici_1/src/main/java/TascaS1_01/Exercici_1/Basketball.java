@@ -10,7 +10,7 @@ public class Basketball extends News {
         this.club = club;
     }
 
-    // EXPERT-NOTE: ¡CORRECCIÓN CRÍTICA! Se han añadido los métodos obligatorios que
+    // EXPERT-NOTE: ¡CORRECCIÓN CRiTICA! Se han añadido los métodos obligatorios que
     // faltaban para cumplir el contrato de la clase abstracta 'News'.
     @Override
     public void calculatePrice() {

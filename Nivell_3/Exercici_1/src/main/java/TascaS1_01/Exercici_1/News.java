@@ -17,7 +17,7 @@ public abstract class News {
         // porque es responsabilidad de cada subclase calcularlos.
     }
 
-    // EXPERT-NOTE: ¡CORRECCIÓN CRÍTICA! Estos métodos deben ser abstractos y no estar comentados.
+    // EXPERT-NOTE: Estos métodos deben ser abstractos, pues son las subclases quienes los implementan
     // Al declararlos 'abstract', obligamos a TODAS las subclases (Soccer, Basketball, etc.)
     // a que implementen su propia lógica para calcular el precio y los puntos.
     // Este es el "contrato" que una clase abstracta impone a sus herederos.
@@ -27,10 +27,18 @@ public abstract class News {
     // --- Getters (Métodos para obtener datos) ---
     // EXPERT-NOTE: Los getters son públicos para que cualquier otra clase pueda leer los datos
     // de una noticia de forma segura.
-    public String getHeadline() { return headline; }
-    public int getPrice() { return price; }
-    public int getPoints() { return points; }
-    public String getText() { return text; }
+    public String getHeadline() {
+        return headline;
+    }
+    public int getPrice() {
+        return price;
+    }
+    public int getPoints() {
+        return points;
+    }
+    public String getText() {
+        return text;
+    }
 
 
     // EXPERT-NOTE: He refactorizado la creación de noticias para que sea más clara y robusta.
