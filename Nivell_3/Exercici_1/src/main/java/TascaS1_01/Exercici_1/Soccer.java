@@ -12,10 +12,6 @@ public class Soccer extends News {
         this.player = player;
     }
 
-    // EXPERT-NOTE: ¡CORRECCIÓN! El método 'calculatePrice' no debe recibir parámetros
-    // y debe usar la anotación @Override para asegurar que está implementando
-    // correctamente el método abstracto de la clase News.
-    // Utiliza las variables de la instancia (this.headline, this.club, etc.).
     @Override
     public void calculatePrice() {
         int calculatedPrice = 300;
@@ -28,7 +24,7 @@ public class Soccer extends News {
         if ("Ferran Torres".equalsIgnoreCase(this.player) || "Benzema".equalsIgnoreCase(this.player)){
             calculatedPrice += 50;
         }
-        this.price = calculatedPrice; // Asignamos el resultado a la variable 'price' heredada.
+        this.price = calculatedPrice;
     }
 
     @Override
@@ -46,11 +42,9 @@ public class Soccer extends News {
         if ("Ferran Torres".equalsIgnoreCase(this.player) || "Benzema".equalsIgnoreCase(this.player)){
             calculatedPoints += 1;
         }
-        this.points = calculatedPoints; // Asignamos el resultado a la variable 'points' heredada.
+        this.points = calculatedPoints;
     }
 
-    // EXPERT-NOTE: Estos métodos estáticos son útiles como "helpers" para extraer
-    // información del titular. Los he mantenido porque es un buen enfoque.
     public static String setTournament(String headline) {
         if (headline.toLowerCase().contains("champions")){
             return "Champions";
@@ -58,9 +52,7 @@ public class Soccer extends News {
         if (headline.toLowerCase().contains("league")){
             return "League";
         }
-        else{
-            return "No relevant tournament";
-        }
+        return "No relevant tournament";
     }
 
     public static String setClub(String headline) {

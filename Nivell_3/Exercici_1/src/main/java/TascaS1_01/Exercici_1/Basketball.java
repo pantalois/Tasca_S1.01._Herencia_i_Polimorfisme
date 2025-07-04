@@ -10,22 +10,30 @@ public class Basketball extends News {
         this.club = club;
     }
 
-    // EXPERT-NOTE: ¡CORRECCIÓN CRiTICA! Se han añadido los métodos obligatorios que
-    // faltaban para cumplir el contrato de la clase abstracta 'News'.
     @Override
     public void calculatePrice() {
         int calculatedPrice = 250;
-        if ("NBA".equalsIgnoreCase(this.competition)) calculatedPrice += 75;
-        if ("Barça".equalsIgnoreCase(this.club) || "Lakers".equalsIgnoreCase(this.club)) calculatedPrice += 50;
+        if ("NBA".equalsIgnoreCase(this.competition)){
+            calculatedPrice += 75;
+        }
+        if ("Barça".equalsIgnoreCase(this.club) || "Lakers".equalsIgnoreCase(this.club)){
+            calculatedPrice += 50;
+        }
         this.price = calculatedPrice;
     }
 
     @Override
     public void calculatePoints() {
         int calculatedPoints = 4;
-        if ("NBA".equalsIgnoreCase(this.competition)) calculatedPoints += 3;
-        if ("Euroliga".equalsIgnoreCase(this.competition)) calculatedPoints += 2;
-        if ("Barça".equalsIgnoreCase(this.club) || "Lakers".equalsIgnoreCase(this.club)) calculatedPoints += 1;
+        if ("NBA".equalsIgnoreCase(this.competition)){
+            calculatedPoints += 3;
+        }
+        if ("Euroliga".equalsIgnoreCase(this.competition)){
+            calculatedPoints += 2;
+        }
+        if ("Barça".equalsIgnoreCase(this.club) || "Lakers".equalsIgnoreCase(this.club)){
+            calculatedPoints += 1;
+        }
         this.points = calculatedPoints;
     }
 

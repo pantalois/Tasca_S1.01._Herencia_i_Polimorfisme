@@ -9,25 +9,30 @@ public class F1 extends News {
         this.team = team;
     }
 
-    // EXPERT-NOTE: Se añade @Override para asegurar la correcta implementación.
     @Override
     public void calculatePrice() {
         price = 100;
-        if ("Ferrari".equalsIgnoreCase(team) || "Mercedes".equalsIgnoreCase(team)) price += 50;
+        if ("Ferrari".equalsIgnoreCase(team) || "Mercedes".equalsIgnoreCase(team)){
+            price += 50;
+        }
     }
 
     @Override
     public void calculatePoints() {
         points = 4;
-        if ("Ferrari".equalsIgnoreCase(team) || "Mercedes".equalsIgnoreCase(team)) points += 2;
+        if ("Ferrari".equalsIgnoreCase(team) || "Mercedes".equalsIgnoreCase(team)){
+            points += 2;
+        }
     }
 
     public static String setTeam(String headline) {
         if (headline.toLowerCase().contains("ferrari")) {
             return "Ferrari";
-        } else if (headline.toLowerCase().contains("mercedes")) {
+        }
+        else if (headline.toLowerCase().contains("mercedes")) {
             return "Mercedes";
-        } else {
+        }
+        else {
             return "No relevant team";
         }
     }

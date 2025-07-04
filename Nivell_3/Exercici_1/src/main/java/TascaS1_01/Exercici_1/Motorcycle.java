@@ -6,8 +6,6 @@ public class Motorcycle extends News {
     public Motorcycle(String headline, String text, String team) {
         super(headline, text);
         this.team = team;
-        calculatePrice();
-        calculatePoints();
     }
 
     @Override
@@ -16,7 +14,6 @@ public class Motorcycle extends News {
         if ("Honda".equalsIgnoreCase(team) || "Yamaha".equalsIgnoreCase(team)){
             price += 50;
         }
-        this.price = price;
     }
 
     @Override

@@ -6,9 +6,6 @@ public class Tennis extends News {
     public Tennis(String headline, String text, /*String tournament,*/ String player) {
         super(headline, text);
         this.player = player;
-        //this.tournament = tournament;
-        calculatePrice();
-        calculatePoints();
     }
 
     @Override
@@ -23,16 +20,9 @@ public class Tennis extends News {
         if ("Federer".equalsIgnoreCase(player) || "Nadal".equalsIgnoreCase(player) || "Djokovic".equalsIgnoreCase(player)) points += 3;
     }
 
-
-    /*public static String setTournament(String headline) {
-        if (headline.toLowerCase().contains("champions")) return "Champions";
-        if (headline.toLowerCase().contains("league")) return "League";
-        return "No relevant tournament";
-    }¿Inconsistencia en el enunciado, no me dice entre que torneos puedo elegir?*/
-
     public static String setPlayer(String headline) {
         if (headline.contains("Federer")){
-            return "Ferran Torres";
+            return "Federer";
         }
         else if (headline.contains("Nadal")){
             return "Nadal";
