@@ -1,5 +1,9 @@
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.service;
 
+import TascaS1_01.Exercici_1.model.Company;
+import TascaS1_01.Exercici_1.model.Editor;
+import TascaS1_01.Exercici_1.model.News;
+import TascaS1_01.Exercici_1.util.NewsroomUtils;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;

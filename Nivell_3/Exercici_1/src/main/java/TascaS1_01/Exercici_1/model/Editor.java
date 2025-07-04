@@ -1,4 +1,5 @@
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.model;
+
 import java.util.*;
 
 public class Editor {

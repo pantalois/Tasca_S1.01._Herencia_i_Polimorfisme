@@ -1,5 +1,4 @@
-// Ejemplo con F1.java (aplica el mismo cambio a Tennis y Motorcycle)
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.model;
 
 public class F1 extends News {
     private final String team;

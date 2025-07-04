@@ -1,4 +1,7 @@
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.model;
+
+import java.util.Scanner;
+
 
 import java.util.Scanner;
 

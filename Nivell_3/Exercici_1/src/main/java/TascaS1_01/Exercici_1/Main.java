@@ -1,5 +1,8 @@
 package TascaS1_01.Exercici_1;
 
+import TascaS1_01.Exercici_1.model.Company;
+import TascaS1_01.Exercici_1.service.NewsroomHandlers;
+import TascaS1_01.Exercici_1.util.NewsroomUtils;
 import java.util.Scanner;
 import java.util.*;
 

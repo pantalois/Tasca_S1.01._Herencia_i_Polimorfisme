@@ -1,4 +1,4 @@
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.model;
 
 public class Tennis extends News {
     private final String player;

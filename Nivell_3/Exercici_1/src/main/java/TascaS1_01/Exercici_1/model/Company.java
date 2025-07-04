@@ -1,4 +1,4 @@
-package TascaS1_01.Exercici_1;
+package TascaS1_01.Exercici_1.model;
 import java.util.HashMap;
 import java.util.List;
 import java.util.*;
