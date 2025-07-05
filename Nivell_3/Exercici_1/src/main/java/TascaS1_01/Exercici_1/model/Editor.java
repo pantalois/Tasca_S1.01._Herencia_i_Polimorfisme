@@ -32,7 +32,6 @@ public class Editor {
         return name;
     }
 
-    // Simplified method to just add news without redundant selection
     public void addNews(Map<Editor, List<News>> companyStruct, News news) {
         List<News> newsList = companyStruct.get(this);
         if (newsList == null) {
