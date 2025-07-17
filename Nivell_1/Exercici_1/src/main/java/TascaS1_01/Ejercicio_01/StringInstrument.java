@@ -5,6 +5,10 @@ public class StringInstrument extends Instrument {
         super(name, price);
 
     }
+
+    static void staticMethod(){
+        System.out.println("This is a static method inside the StringInstrument class.");
+    }
     @Override
     public String play() {
         return "A string instrument is playing ";

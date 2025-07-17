@@ -1,4 +1,4 @@
-package TascaS1_01.Exercici_02;
+package TascaS1_01.Exercici_01;
 
 public class Phone{
     private final String brand;

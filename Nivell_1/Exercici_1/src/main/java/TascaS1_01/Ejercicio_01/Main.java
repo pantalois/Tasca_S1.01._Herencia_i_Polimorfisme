@@ -17,6 +17,7 @@ public class Main {
                     System.out.println("Sounds good, right? That´s an " + wind.getName() + " and only costs " + wind.getPrice());
                 }
                 case "String","string" -> {
+                    StringInstrument.staticMethod();
                     StringInstrument string = new StringInstrument("Guitar", 499.99);
                     System.out.println(string.play());
                     System.out.println("Sounds good, right? That´s an " + string.getName() + " and only costs " + string.getPrice());
